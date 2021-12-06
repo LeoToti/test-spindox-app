@@ -10,6 +10,7 @@ class Home extends React.Component {
     this.state = {    queryError: "",
     selected: [],
     show: "", };
+    this.fectchData = this.fectchData.bind(this);
   }
 
   
