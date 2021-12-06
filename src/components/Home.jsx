@@ -5,11 +5,14 @@ import ProfilesFunctional from "./ProfileFunctional";
 import { Row, Div, Col } from "react-bootstrap";
 
 class Home extends React.Component {
-  state = {
-    queryError: "",
+  constructor(props) {
+    super(props);
+    this.state = {    queryError: "",
     selected: [],
-    show: "",
-  };
+    show: "", };
+  }
+
+  
 
   fectchData = async function () {
     this.setState({ isLoading: true });
