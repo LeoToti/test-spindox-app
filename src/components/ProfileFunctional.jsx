@@ -5,7 +5,7 @@ import { RiLockPasswordFill } from "react-icons/ri";
 import { AiFillPhone, AiOutlineUser, AiTwotoneMail } from "react-icons/ai";
 import { FaAddressBook, FaBirthdayCake } from "react-icons/fa";
 import Datetime from "react-datetime";
-import moment from "moment"
+import moment from "moment";
 
 const ProfileFunctional = ({ data }) => {
   const [show, setShow] = useState("");
@@ -78,15 +78,15 @@ const ProfileFunctional = ({ data }) => {
             </Col>
             <Col>
               <FaBirthdayCake
-                onMouseOver={({target}) => {
-                    target.style.color = "green";
-                    setShow( moment(users.dob.date).format("DD/MM/YYYY") ) ;
-                    setField("My birthday is")}}
-
-                    size={60}
-                    onMouseOut={({ target }) => {
-                        target.style.color = "black";}}
-                    
+                onMouseOver={({ target }) => {
+                  target.style.color = "green";
+                  setShow(moment(users.dob.date).format("DD/MM/YYYY"));
+                  setField("My birthday is");
+                }}
+                size={60}
+                onMouseOut={({ target }) => {
+                  target.style.color = "black";
+                }}
               />
             </Col>
             <Col>

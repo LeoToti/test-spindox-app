@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
-import Profiles from "./Profiles";
-import ProfilesFunctional from "./ProfileFunctional"
+
+import ProfilesFunctional from "./ProfileFunctional";
 import { Row, Div, Col } from "react-bootstrap";
 
 class Home extends React.Component {
@@ -43,7 +43,6 @@ class Home extends React.Component {
   render() {
     return (
       <>
-        {/* <Profiles user={this.state.selected} /> */}
         <ProfilesFunctional data={this.state.selected} />
       </>
     );
