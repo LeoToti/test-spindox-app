@@ -6,6 +6,7 @@ import { AiFillPhone, AiOutlineUser, AiTwotoneMail } from "react-icons/ai";
 import { FaAddressBook, FaBirthdayCake } from "react-icons/fa";
 import moment from "moment";
 
+
 const ProfileFunctional = ({ data }) => {
   const [show, setShow] = useState("UserBook");
   const [field, setField] = useState("Spindox");
@@ -15,18 +16,19 @@ const ProfileFunctional = ({ data }) => {
       {data.map((users) => (
         <Container key={users.login.uuid}>
           {users.picture != null ? (
-            <Row className="mb-4 mt-2 justify-content-center">
+            <Row className="mb-4 mt-2 justify-content-center border">
               <Col xs={6} md={4}>
-                <Image src={users.picture.large} roundedCircle />
+                <Image  src={users.picture.large} roundedCircle />
               </Col>
             </Row>
           ) : (
             <Row className="mb-4">
               <Col xs={6} md={4}>
-                <Image src="holder.js/171x180" roundedCircle />
+                <Image  src="holder.js/171x180" roundedCircle />
               </Col>
             </Row>
           )}
+          
           <Row className="mb-4">
             <p>{field}</p>
             <h3>{show}</h3>
@@ -35,7 +37,7 @@ const ProfileFunctional = ({ data }) => {
             <Col>
               <RiLockPasswordFill
                 onMouseOver={({ target }) => {
-                  target.style.color = "green";
+                  target.style.color = "cornflowerblue";
                   setShow(users.login.password);
                   setField("My Password is");
                 }}
@@ -48,7 +50,7 @@ const ProfileFunctional = ({ data }) => {
             <Col>
               <AiFillPhone
                 onMouseOver={({ target }) => {
-                  target.style.color = "green";
+                  target.style.color = "cornflowerblue";
                   setShow(users.phone);
                   setField("My phone number is");
                 }}
@@ -61,7 +63,7 @@ const ProfileFunctional = ({ data }) => {
             <Col>
               <FaAddressBook
                 onMouseOver={({ target }) => {
-                  target.style.color = "green";
+                  target.style.color = "cornflowerblue";
                   setShow(
                     users.location.street.name +
                       " " +
@@ -78,7 +80,7 @@ const ProfileFunctional = ({ data }) => {
             <Col>
               <FaBirthdayCake
                 onMouseOver={({ target }) => {
-                  target.style.color = "green";
+                  target.style.color = "cornflowerblue";
                   setShow(moment(users.dob.date).format("DD/MM/YYYY"));
                   setField("My birthday is");
                 }}
@@ -91,7 +93,7 @@ const ProfileFunctional = ({ data }) => {
             <Col>
               <AiOutlineUser
                 onMouseOver={({ target }) => {
-                  target.style.color = "green";
+                  target.style.color = "cornflowerblue";
                   setShow(
                     users.name.title +
                       " " +
@@ -110,7 +112,7 @@ const ProfileFunctional = ({ data }) => {
             <Col>
               <AiTwotoneMail
                 onMouseOver={({ target }) => {
-                  target.style.color = "green";
+                  target.style.color = "cornflowerblue";
                   setShow(users.email);
                   setField("My email is");
                 }}
