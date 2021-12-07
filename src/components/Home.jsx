@@ -13,7 +13,13 @@ class Home extends React.Component {
     this.fectchData = this.fectchData.bind(this);
   }
 
-  // Ho usato due differenti tipi di componenti (Class e Functional)per mostrarvi entrambi i casi, anche se ad ora si usano sopratutto i Functional per questioni di ri-usabilità del codice. Ho scelto di non usare axios per il data fetching per mostrare il codice completo. Spero vada bene per voi, a presto e grazie. 
+  // Ho usato due differenti tipi di componenti 
+  //(Class e Functional)per mostrarvi entrambi i casi, 
+  //anche se ad ora si usano sopratutto i Functional 
+  //per questioni di ri-usabilità del codice. 
+  //Ho scelto di non usare axios per il data fetching 
+  //per mostrare il codice completo. 
+  //Spero vada bene per voi, a presto e grazie. 
 
   fectchData = async function () {
     this.setState({ isLoading: true });
