@@ -21,6 +21,7 @@ code {
 
   position: relative;
 }
+
 .hover {
   display: flex;
 }
@@ -29,15 +30,16 @@ code {
   top: 80%;
   left: 20%;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(5%, 35%);
-  z-index: 1;
+  transform: translate(4%, 36%);
 }
+
 .imgB {
   border: 5px solid rgb(228, 228, 228) !important;
   border-radius: 50%;
   padding: 5px;
   border-width: 1px !important;
-  z-index: 1;
+
+  background-color: ghostwhite;
 }
 
 .target {
