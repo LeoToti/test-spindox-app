@@ -17,8 +17,8 @@ const ProfileFunctional = ({ data }) => {
         <Container key={users.login.uuid}>
           {users.picture != null ? (
             <Row className="mb-4 mt-2 justify-content-center border">
-              <Col xs={6} md={4}>
-                <Image  src={users.picture.large} roundedCircle />
+              <Col className="imgT mb-4" xs={6} md={4}>
+                <Image className="imgB"  src={users.picture.large}  />
               </Col>
             </Row>
           ) : (
@@ -29,13 +29,13 @@ const ProfileFunctional = ({ data }) => {
             </Row>
           )}
           
-          <Row className="mb-4">
+          <Row className="m-4">
             <p>{field}</p>
             <h3>{show}</h3>
           </Row>
           <Row>
             <Col>
-              <RiLockPasswordFill
+              <RiLockPasswordFill className="hover"
                 onMouseOver={({ target }) => {
                   target.style.color = "cornflowerblue";
                   setShow(users.login.password);
