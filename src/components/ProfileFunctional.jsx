@@ -34,8 +34,8 @@ const ProfileFunctional = ({ data }) => {
             <h3>{show}</h3>
           </Row>
           <Row>
-            <Col>
-              <RiLockPasswordFill className="hover"
+            <Col id="sec">
+              <RiLockPasswordFill  className="hover"
                 onMouseOver={({ target }) => {
                   target.style.color = "cornflowerblue";
                   setShow(users.login.password);

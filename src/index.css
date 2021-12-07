@@ -42,14 +42,3 @@ code {
   background-color: ghostwhite;
 }
 
-.target {
-  position: absolute;
-  border-bottom: 4px solid transparent;
-  z-index: -1;
-  transform: translateX(-60px);
-}
-
-.hover,
-.target {
-  transition: all 0.35s ease-in-out;
-}
