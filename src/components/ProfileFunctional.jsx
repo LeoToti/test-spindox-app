@@ -4,7 +4,6 @@ import { HiChevronDoubleDown } from "react-icons/hi";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { AiFillPhone, AiOutlineUser, AiTwotoneMail } from "react-icons/ai";
 import { FaAddressBook, FaBirthdayCake } from "react-icons/fa";
-import Datetime from "react-datetime";
 import moment from "moment";
 
 const ProfileFunctional = ({ data }) => {
